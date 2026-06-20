@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Intro</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Learning CSS Grid</h1>
+
+      <p>CSS Grid is a layout system that lets you arrange content into rows and columns. In this exercise, you will practice creating grids, changing column sizes, adding gaps, and making grid items span across multiple columns.</p>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>What We Are Practicing</h2>
+
+        <p>Each demo area below focuses on one important CSS Grid concept. The boxes are intentionally simple so you can focus on how the layout works instead of getting distracted by detailed design.</p>
+
+        <p>Remember: the parent element becomes the <strong>grid container</strong> when you add the <code>display: grid;</code> property. The direct children of that container become grid items.</p>
+      </section>
+
+      <hr>
+
+      <section class="demo-section">
+        <h2>Demo 1: Equal Columns</h2>
+
+        <p>This demo will become a three-column grid where each column takes up the same amount of space.</p>
+
+        <div class="equal-columns">
+          <section class="grid-box">
+            <h3>Box 1</h3>
+            <p>This is the first grid item. It will become part of a three-column layout.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Box 2</h3>
+            <p>This is the second grid item. Grid makes it easy to place items side by side.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Box 3</h3>
+            <p>This is the third grid item. Each box will take up one equal column.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="demo-section">
+        <h2>Demo 2: Unequal Columns</h2>
+
+        <p>This demo will use fractional units to make the first and third columns wider than the middle column.</p>
+
+        <div class="unequal-columns">
+          <section class="grid-box">
+            <h3>Wide Column</h3>
+            <p>This column will be wider than the middle column.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Narrow</h3>
+            <p>This middle column will be narrower.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Wide Column</h3>
+            <p>This column will also be wider than the middle column.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="demo-section">
+        <h2>Demo 3: Adding Gap</h2>
+
+        <p>This demo will show how the <code>gap</code> property creates space between grid items. Since there are six items, the grid will automatically create a second row.</p>
+
+        <div class="gap-demo">
+          <section class="grid-box">
+            <h3>Item 1</h3>
+            <p>Grid gaps create space between columns and rows.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Item 2</h3>
+            <p>The gap is controlled on the grid container.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Item 3</h3>
+            <p>That means the spacing is consistent across the grid.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Item 4</h3>
+            <p>Gaps are much easier than trying to add margins to every item.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Item 5</h3>
+            <p>Grid can automatically create additional rows when needed.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Item 6</h3>
+            <p>This item will wrap onto a second row.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="demo-section">
+        <h2>Demo 4: Spanning Columns</h2>
+
+        <p>This demo will show how one grid item can span across multiple columns.</p>
+
+        <div class="span-demo">
+          <section class="grid-box">
+            <h3>Box 1</h3>
+            <p>This item will take up one column.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Box 2</h3>
+            <p>This item will take up one column.</p>
+          </section>
+
+          <section class="grid-box">
+            <h3>Box 3</h3>
+            <p>This item will take up one column.</p>
+          </section>
+
+          <section class="grid-box wide-box">
+            <h3>Wide Box</h3>
+            <p>This item will span across all three columns.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="demo-section">
+        <h2>Demo 5: Page Layout Preview</h2>
+
+        <p>This demo introduces the idea that Grid can be used for larger page areas, such as a main content column and a sidebar. This will prepare you for the Flower Page exercise.</p>
+
+        <div class="layout-demo">
+          <section class="grid-box main-content">
+            <h3>Main Content</h3>
+            <p>This larger area could hold the main article or primary content on a page.</p>
+            <p>CSS Grid is useful when you want to divide a page into larger layout regions.</p>
+          </section>
+
+          <aside class="grid-box sidebar">
+            <h3>Sidebar</h3>
+            <p>This narrower area could hold links, highlights, related information, or extra content.</p>
+          </aside>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="demo-section on-your-own">
+        <h2>On Your Own Challenge</h2>
+
+        <p>Use the concepts from the demos above to complete this final grid on your own.</p>
+
+        <p>This challenge is a simple preview of how Grid can be used for page layout. Instead of making numbered boxes, you will create a small layout with a main content area, a sidebar, and a full-width box below them.</p>
+
+        <ol>
+          <li>Turn the challenge area into a grid.</li>
+          <li>Create three equal columns.</li>
+          <li>Add a gap between the grid items.</li>
+          <li>Make the main content area span <strong>two</strong> columns.</li>
+          <li>Make the full-width box span across all <strong>three</strong> columns.</li>
+        </ol>
+
+        <div class="challenge-grid">
+          <section class="grid-box challenge-main">
+            <h3>Main Content</h3>
+            <p>This box should span two columns. It represents the main content area of a page.</p>
+          </section>
+
+          <aside class="grid-box challenge-sidebar">
+            <h3>Sidebar</h3>
+            <p>This box should take up one column. It represents secondary content.</p>
+          </aside>
+
+          <section class="grid-box challenge-wide">
+            <h3>Full-Width Box</h3>
+            <p>This box will be below the first two boxes and span the entire width of all three columns. </p>
+          </section>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
