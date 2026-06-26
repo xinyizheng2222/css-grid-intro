@@ -8,7 +8,8 @@
 */
 
 .equal-columns {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* ========================================
@@ -22,7 +23,8 @@
 */
 
 .unequal-columns {
-
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
 }
 
 /* ========================================
@@ -36,7 +38,9 @@
 */
 
 .gap-demo {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
 }
 
 /* ========================================
@@ -50,12 +54,14 @@
 */
 
 .span-demo {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 /* ⬇︎ This item will span across all three columns. */
 .wide-box {
-
+grid-column: span 3;
 }
 
 /* ========================================
@@ -69,7 +75,9 @@
 */
 
 .layout-demo {
-
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  gap: 1rem;
 }
 
 /* ========================================
@@ -87,15 +95,17 @@
 */
 
 .challenge-grid {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .challenge-main {
-
+ grid-column: span 2;
 }
 
 .challenge-wide {
-
+ grid-column: span 3;
 }
 
 
@@ -208,4 +218,5 @@ code {
   border-color: #2e2ea5;
   background-color: #e8e8e8ba;
 }
+
 
